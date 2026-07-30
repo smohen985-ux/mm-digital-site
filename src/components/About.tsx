@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { GrowthChartIllustration } from "./ui/illustrations";
 
 const VALUES = [
   {
@@ -24,24 +25,30 @@ const VALUES = [
 export default function About() {
   return (
     <section id="about" className="py-24 md:py-24">
-      <div className="container max-w-[720px]">
-        <Reveal index={0} as="p" className="mb-6 inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wide text-muted before:content-[''] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-full before:bg-accent">
-          About us
-        </Reveal>
-        <Reveal index={1} as="h2" isTitle className="mb-8 text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
-          Why M&amp;M exists.
-        </Reveal>
-        <Reveal index={2} as="p" className="mb-6 max-w-[52ch] text-lg text-[#C7C7C9]">
-          Most small business owners have hired an agency before. Money went out every month, and
-          nothing came back but a login they never used and a report full of words like
-          &ldquo;impressions&rdquo; and &ldquo;engagement.&rdquo; M&amp;M started because that
-          shouldn&rsquo;t be normal.
-        </Reveal>
-        <Reveal index={3} as="p" className="text-muted">
-          We keep the team small on purpose. Fewer clients, more attention, and one person who
-          actually knows your business answering when you call. We only take on businesses we
-          think we can genuinely help — if we don&rsquo;t think we&rsquo;re a fit, we&rsquo;ll
-          tell you that too.
+      <div className="container grid grid-cols-1 items-center gap-10 md:grid-cols-[1.05fr_0.95fr] md:gap-16">
+        <div>
+          <Reveal index={0} as="p" className="mb-6 inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wide text-muted before:content-[''] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-full before:bg-accent">
+            About us
+          </Reveal>
+          <Reveal index={1} as="h2" isTitle className="mb-8 text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
+            Why M&amp;M exists.
+          </Reveal>
+          <Reveal index={2} as="p" className="mb-6 max-w-[52ch] text-lg text-[#C7C7C9]">
+            Most small business owners have hired an agency before. Money went out every month, and
+            nothing came back but a login they never used and a report full of words like
+            &ldquo;impressions&rdquo; and &ldquo;engagement.&rdquo; M&amp;M started because that
+            shouldn&rsquo;t be normal.
+          </Reveal>
+          <Reveal index={3} as="p" className="text-muted">
+            We keep the team small on purpose. Fewer clients, more attention, and one person who
+            actually knows your business answering when you call. We only take on businesses we
+            think we can genuinely help — if we don&rsquo;t think we&rsquo;re a fit, we&rsquo;ll
+            tell you that too.
+          </Reveal>
+        </div>
+
+        <Reveal index={1}>
+          <GrowthChartIllustration />
         </Reveal>
       </div>
 
