@@ -5,21 +5,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-title: "M&M Digital — Marketing for Small Business Owners",
-description:
-"No long contracts. You talk to the person running your ads. Reports in plain English — not a dashboard nobody reads.",
+  title: "M&M Digital — Marketing for Small Business Owners",
+  description:
+    "Social ads, Google Ads, and websites — handled by one person, in plain English. No long contracts, ever.",
 };
 
 export default function RootLayout({
-children,
+  children,
 }: Readonly<{
-children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-return (
-<html lang="en">
-<body className={`${inter.variable} font-sans antialiased`}>
-{children}
-</body>
-</html>
-);
+  return (
+    <html lang="en">
+      <body className={`${inter.variable} font-sans antialiased`}>
+        {children}
+      </body>
+    </html>
+  );
 }
