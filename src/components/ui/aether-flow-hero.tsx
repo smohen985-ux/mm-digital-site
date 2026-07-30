@@ -201,9 +201,9 @@ export default function AetherFlowHero() {
           animate="visible"
           className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-ink"
         >
-          Marketing that gets you customers,
+          Full-Service Digital Marketing
           <br />
-          not just clicks.
+          to Get You More Customers
         </motion.h1>
 
         <motion.p
@@ -213,8 +213,10 @@ export default function AetherFlowHero() {
           animate="visible"
           className="max-w-2xl mx-auto text-lg text-gray-400 mb-10"
         >
-          Social ads, Google Ads, and websites — handled by one person, in plain
-          English. No long contracts, ever.
+          We handle your social ads, Google Ads, and website — the whole digital
+          marketing stack — without the jargon or long contracts. One person runs
+          your account, tells you what's working in plain English, and keeps
+          adjusting until it does.
         </motion.p>
 
         <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
