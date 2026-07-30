@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "M&M Digital — Marketing for Small Business Owners",
   description:
-    "Social ads, Google Ads, and websites — handled by one person, in plain English. No long contracts, ever.",
+    "We handle your social ads, Google Ads, and website — the whole digital marketing stack — without the jargon or long contracts. One person runs your account and tells you what's working in plain English.",
 };
 
 export default function RootLayout({
