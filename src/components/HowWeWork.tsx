@@ -17,14 +17,14 @@ const CARDS = [
     body: "Digital marketing isn't “set and forget.” We monitor performance, analyze results, and continually optimize campaigns to maximize your return on investment.",
   },
   {
-    label: "Clear Expectations",
-    title: "No surprises, no hidden fees.",
-    body: "You'll know exactly what you're paying for, what to expect, and when to expect results — before we ever start working together.",
+    label: "Honest Recommendations",
+    title: "We only succeed when our clients succeed.",
+    body: "If we don't believe our services are the right fit for your business, we'll tell you. Our goal is to build long-term partnerships based on trust, not sell services that won't create value.",
   },
   {
-    label: "Hands-On Involvement",
-    title: "We stay closely involved in your account, always.",
-    body: "From strategy to execution, your dedicated partner is actively managing your campaigns day to day — not checking in once a month.",
+    label: "Customized Strategies",
+    title: "No two businesses are the same.",
+    body: "Every marketing strategy is tailored to your industry, audience, competition, and business objectives. We don't rely on one-size-fits-all templates.",
   },
 ];
 
@@ -59,12 +59,6 @@ export default function HowWeWork() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal index={5} as="p" className="mx-auto mt-12 max-w-[720px] text-center text-[15px] text-muted">
-          If we don&rsquo;t believe our services are the right fit for your business, we&rsquo;ll
-          tell you. Our goal is to build long-term partnerships based on trust, not sell services
-          that won&rsquo;t create value.
-        </Reveal>
       </div>
     </section>
   );
