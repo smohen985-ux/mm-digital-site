@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "M&M Digital — Marketing for Small Business Owners",
+  title: "M&M Digital Pro — Marketing for Small Business Owners",
   description:
-    "We handle your social ads, Google Ads, and website — the whole digital marketing stack — without the jargon or long contracts. One person runs your account and tells you what's working in plain English.",
+    "We help businesses grow through Google Ads, Meta Ads, SEO, website development, and digital strategy—all managed by a dedicated expert focused on delivering measurable results.",
 };
 
 export default function RootLayout({
