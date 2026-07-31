@@ -1,10 +1,10 @@
 const LINKS = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#how-we-work", label: "How We Work" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#faqs", label: "FAQs" },
+  { href: "#solutions", label: "Solutions" },
+  { href: "#who-we-serve", label: "Who We Serve" },
+  { href: "#values", label: "Values" },
+  { href: "#client-success", label: "Client Success" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container flex flex-wrap items-start justify-between gap-8">
         <div>
           <div className="text-lg font-extrabold tracking-tight">
-            M<span className="text-accent">&amp;</span>M Digital
+            M<span className="text-accent">&amp;</span>M Digital Pro
           </div>
           <p className="mt-4 text-[13px] text-muted">
             Serving small business owners across the U.S.
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container">
-        <p className="mt-12 text-[13px] text-muted">© 2026 M&amp;M Digital. All rights reserved.</p>
+        <p className="mt-12 text-[13px] text-muted">© 2026 M&amp;M Digital Pro. All rights reserved.</p>
       </div>
     </footer>
   );
