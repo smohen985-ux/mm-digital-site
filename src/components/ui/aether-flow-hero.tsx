@@ -213,10 +213,9 @@ export default function AetherFlowHero() {
           animate="visible"
           className="max-w-2xl mx-auto text-lg text-gray-400 mb-10"
         >
-          We handle your social ads, Google Ads, and website — the whole digital
-          marketing stack — without the jargon or long contracts. One person runs
-          your account, tells you what's working in plain English, and keeps
-          adjusting until it does.
+          We help businesses grow through Google Ads, Meta Ads, SEO, website
+          development, and digital strategy—all managed by a dedicated expert
+          focused on delivering measurable results.
         </motion.p>
 
         <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
