@@ -37,7 +37,7 @@ export default function About() {
             Many small business owners have invested in digital marketing without seeing
             meaningful results. Too often, they receive complicated reports filled with
             marketing jargon but little clarity on how their investment is helping their
-            business grow. At M&amp;M Digital, we believe marketing should be transparent,
+            business grow. At M&amp;M Digital Pro, we believe marketing should be transparent,
             measurable, and focused on real business outcomes.
           </Reveal>
           <Reveal index={3} as="p" className="text-muted">
