@@ -31,19 +31,21 @@ export default function About() {
             About us
           </Reveal>
           <Reveal index={1} as="h2" isTitle className="mb-8 text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
-            Why M&amp;M exists.
+            Why M&amp;M Digital Pro Exists
           </Reveal>
           <Reveal index={2} as="p" className="mb-6 max-w-[52ch] text-lg text-[#C7C7C9]">
-            Most small business owners have hired an agency before. Money went out every month, and
-            nothing came back but a login they never used and a report full of words like
-            &ldquo;impressions&rdquo; and &ldquo;engagement.&rdquo; M&amp;M started because that
-            shouldn&rsquo;t be normal.
+            Many small business owners have invested in digital marketing without seeing
+            meaningful results. Too often, they receive complicated reports filled with
+            marketing jargon but little clarity on how their investment is helping their
+            business grow. At M&amp;M Digital, we believe marketing should be transparent,
+            measurable, and focused on real business outcomes.
           </Reveal>
           <Reveal index={3} as="p" className="text-muted">
-            We keep the team small on purpose. Fewer clients, more attention, and one person who
-            actually knows your business answering when you call. We only take on businesses we
-            think we can genuinely help — if we don&rsquo;t think we&rsquo;re a fit, we&rsquo;ll
-            tell you that too.
+            That&rsquo;s why we intentionally keep our client portfolio small. Every client
+            works with a dedicated marketing professional who understands their business,
+            provides clear communication, and continually refines strategies based on
+            performance. We only partner with businesses where we believe we can create real
+            value, and if we&rsquo;re not the right fit, we&rsquo;ll say so.
           </Reveal>
         </div>
 
