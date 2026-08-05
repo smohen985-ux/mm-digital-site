@@ -36,10 +36,7 @@ export default function Reviews() {
     <section id="client-success" className="bg-gradient-to-b from-surface2 to-bg py-24">
       <div className="container">
         <div className="mb-16 max-w-[640px]">
-          <Reveal index={0} as="p" className="mb-6 inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-wide text-muted before:content-[''] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-full before:bg-accent">
-            Client success
-          </Reveal>
-          <Reveal index={1} as="h2" isTitle className="text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
+          <Reveal index={0} as="h2" isTitle className="text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
             Real businesses. Real results.
           </Reveal>
         </div>
