@@ -55,35 +55,34 @@ export default function About() {
       </div>
 
       <div className="container">
-        <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {VALUES.map((v, i) =>
-            v.href ? (
-              <Reveal key={v.title} index={i} as="div">
-                <a
-                  href={v.href}
-                  className="block rounded-2xl border border-border bg-surface p-8 transition-[border-color,transform] hover:-translate-y-1 hover:border-accent"
-                >
-                  <span className="mb-3 block text-xs font-bold uppercase tracking-wide text-accent">
-                    {v.label}
-                  </span>
-                  <h3 className="mb-2 text-lg font-bold text-ink">{v.title}</h3>
-                  <p className="mb-0 text-sm text-muted">{v.body}</p>
-                </a>
-              </Reveal>
-            ) : (
-              <Reveal
-                key={v.title}
-                index={i}
-                className="rounded-2xl border border-border bg-surface p-8"
-              >
+        <div className="mt-20 grid grid-cols-1 divide-y divide-border border-t border-border md:grid-cols-3 md:divide-x md:divide-y-0">
+          {VALUES.map((v, i) => {
+            const content = (
+              <>
                 <span className="mb-3 block text-xs font-bold uppercase tracking-wide text-accent">
                   {v.label}
                 </span>
                 <h3 className="mb-2 text-lg font-bold text-ink">{v.title}</h3>
                 <p className="mb-0 text-sm text-muted">{v.body}</p>
+              </>
+            );
+            return (
+              <Reveal
+                key={v.title}
+                index={i}
+                as="div"
+                className="px-1 py-8 first:pl-0 last:pr-0 md:px-8 md:py-2"
+              >
+                {v.href ? (
+                  <a href={v.href} className="block transition-opacity hover:opacity-70">
+                    {content}
+                  </a>
+                ) : (
+                  content
+                )}
               </Reveal>
-            )
-          )}
+            );
+          })}
         </div>
       </div>
     </section>
