@@ -177,56 +177,60 @@ export default function AetherFlowHero() {
   }, []);
 
   return (
-    <div className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-bg">
-      <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full" />
+    <div className="relative min-h-[100dvh] w-full overflow-hidden bg-bg">
+      <canvas ref={canvasRef} className="absolute top-0 left-0 h-full w-full" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 right-0 z-[5] hidden w-[45%] bg-gradient-to-l from-bg via-bg/70 to-transparent md:block"
+      />
 
-      <div className="relative z-10 text-center p-6">
-        <motion.div
-          custom={0}
-          variants={fadeUpVariants}
-          initial="hidden"
-          animate="visible"
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-6 backdrop-blur-sm"
-        >
-          <Zap className="h-4 w-4 text-accent" />
-          <span className="text-sm font-medium text-gray-200">
-            Digital marketing for real businesses
-          </span>
-        </motion.div>
-
-        <motion.h1
-          custom={1}
-          variants={fadeUpVariants}
-          initial="hidden"
-          animate="visible"
-          className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-ink"
-        >
-          Full-Service Digital Marketing
-          <br />
-          to Get You More Customers
-        </motion.h1>
-
-        <motion.p
-          custom={2}
-          variants={fadeUpVariants}
-          initial="hidden"
-          animate="visible"
-          className="max-w-2xl mx-auto text-lg text-gray-400 mb-10"
-        >
-          We help businesses grow through Google Ads, Meta Ads, SEO, website
-          development, and digital strategy—all managed by a dedicated expert
-          focused on delivering measurable results.
-        </motion.p>
-
-        <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
-          <a
-            href="#contact"
-            className="px-8 py-4 bg-accentBtn text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition-opacity duration-300 inline-flex items-center gap-2"
+      <div className="container relative z-10 flex min-h-[100dvh] flex-col justify-center py-28">
+        <div className="max-w-xl">
+          <motion.div
+            custom={0}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-1.5 backdrop-blur-sm"
           >
-            Get a Free Ad Account Review
-            <ArrowRight className="h-5 w-5" />
-          </a>
-        </motion.div>
+            <Zap className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-gray-200">
+              Digital marketing for real businesses
+            </span>
+          </motion.div>
+
+          <motion.h1
+            custom={1}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="mb-6 text-left text-5xl font-extrabold leading-[1.04] tracking-tight text-ink md:text-6xl"
+          >
+            Full-Service Digital Marketing to Get You More Customers
+          </motion.h1>
+
+          <motion.p
+            custom={2}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="mb-10 max-w-lg text-left text-lg text-gray-400"
+          >
+            We help businesses grow through Google Ads, Meta Ads, SEO, website
+            development, and digital strategy—all managed by a dedicated expert
+            focused on delivering measurable results.
+          </motion.p>
+
+          <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-lg bg-accentBtn px-8 py-4 font-semibold text-white shadow-lg transition-opacity duration-300 hover:opacity-90"
+            >
+              Get a Free Ad Account Review
+              <ArrowRight className="h-5 w-5" />
+            </a>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
