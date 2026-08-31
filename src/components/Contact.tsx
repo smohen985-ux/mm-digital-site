@@ -60,10 +60,13 @@ export default function Contact() {
           <Reveal index={1}>
             <form
               className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-8"
-              action="mailto:mmdigitalpro9@gmail.com"
-              method="post"
-              encType="text/plain"
+              action="https://formsubmit.co/mmdigitalpro9@gmail.com"
+              method="POST"
             >
+              <input type="hidden" name="_subject" value="New lead from M&M Digital Pro website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://smohen985-ux.github.io/mm-digital-site/#contact" />
               <div>
                 <label htmlFor="name" className="mb-1.5 block text-xs font-semibold text-muted">
                   Name
