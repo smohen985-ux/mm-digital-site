@@ -206,7 +206,7 @@ export default function AetherFlowHero() {
             animate="visible"
             className="mb-6 text-left text-5xl font-extrabold leading-[1.04] tracking-tight text-ink md:text-6xl"
           >
-            Full-Service Digital Marketing to Get You More Customers
+            The Full-Service Partner Built to Grow Your Business
           </motion.h1>
 
           <motion.p
