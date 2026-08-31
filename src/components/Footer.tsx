@@ -1,3 +1,5 @@
+import { Instagram } from "lucide-react";
+
 const LINKS = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -19,6 +21,15 @@ export default function Footer() {
           <p className="mt-4 text-[13px] text-muted">
             Serving small business owners across the U.S.
           </p>
+          <a
+            href="https://www.instagram.com/digital_promm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="M&M Digital Pro on Instagram"
+            className="mt-4 inline-flex text-muted hover:text-accent"
+          >
+            <Instagram className="h-5 w-5" />
+          </a>
         </div>
         <div className="flex flex-wrap gap-8">
           {LINKS.map((l) => (
