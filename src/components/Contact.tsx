@@ -44,10 +44,10 @@ export default function Contact() {
               <div className="text-[15px]">
                 <span className="mb-0.5 block text-xs font-semibold text-muted">Email</span>
                 <a
-                  href="mailto:hello@mmdigital.com"
+                  href="mailto:mmdigitalpro9@gmail.com"
                   className="font-semibold text-ink hover:text-accent"
                 >
-                  hello@mmdigital.com
+                  mmdigitalpro9@gmail.com
                 </a>
               </div>
               <div className="text-[15px]">
@@ -60,7 +60,7 @@ export default function Contact() {
           <Reveal index={1}>
             <form
               className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-8"
-              action="mailto:hello@mmdigital.com"
+              action="mailto:mmdigitalpro9@gmail.com"
               method="post"
               encType="text/plain"
             >
