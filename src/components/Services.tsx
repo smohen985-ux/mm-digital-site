@@ -1,4 +1,4 @@
-import { Search, Megaphone, Globe2, TrendingUp, Compass, BarChart3 } from "lucide-react";
+import { Search, Megaphone, Globe2, TrendingUp, BarChart3, Briefcase, Video } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { AdMockupIllustration } from "./ui/illustrations";
 
@@ -9,6 +9,7 @@ const SOLUTIONS = [
     title: "Google Ads",
     tagline: "Get in front of customers when they're ready to buy.",
     body: "We create, manage, and optimize Google Ads campaigns that generate qualified leads, maximize your advertising budget, and deliver measurable business results.",
+    subItems: undefined as string[] | undefined,
   },
   {
     icon: Megaphone,
@@ -16,6 +17,7 @@ const SOLUTIONS = [
     title: "Social Media Advertising",
     tagline: "Turn social media into a customer acquisition engine.",
     body: "Reach your ideal audience through strategic Facebook, Instagram, TikTok, and YouTube advertising designed to increase awareness, generate leads, and grow your business.",
+    subItems: undefined as string[] | undefined,
   },
   {
     icon: Globe2,
@@ -23,6 +25,7 @@ const SOLUTIONS = [
     title: "Website Design & Development",
     tagline: "Build a website that works as hard as you do.",
     body: "We design fast, mobile-friendly websites that build credibility, improve user experience, and convert visitors into paying customers.",
+    subItems: undefined as string[] | undefined,
   },
   {
     icon: TrendingUp,
@@ -30,20 +33,31 @@ const SOLUTIONS = [
     title: "Search Engine Optimization (SEO)",
     tagline: "Be found where your customers are searching.",
     body: "Improve your visibility on Google with SEO strategies that increase organic traffic, strengthen your online presence, and deliver sustainable long-term growth.",
-  },
-  {
-    icon: Compass,
-    number: "Solution 5",
-    title: "Marketing Strategy & Growth Consulting",
-    tagline: "Make smarter marketing decisions with confidence.",
-    body: "From campaign strategy to business positioning, we provide expert guidance and data-driven insights that help you invest in what works and eliminate what doesn't.",
+    subItems: undefined as string[] | undefined,
   },
   {
     icon: BarChart3,
-    number: "Solution 6",
+    number: "Solution 5",
     title: "Analytics & Performance Reporting",
     tagline: "Know exactly where your marketing dollars are going.",
     body: "Receive clear, easy-to-understand reports that focus on the metrics that matter—leads, conversions, and return on investment—not marketing jargon.",
+    subItems: undefined as string[] | undefined,
+  },
+  {
+    icon: Briefcase,
+    number: "Solution 6",
+    title: "Consulting",
+    tagline: "Expert guidance across the decisions that matter most.",
+    body: "Whether you need a second opinion on business operations, help evaluating AI tools, or a clear-eyed marketing strategy, our consulting service gives you direct access to expert guidance—no long engagements required.",
+    subItems: ["Business Consulting", "AI Consulting", "Marketing Consulting"],
+  },
+  {
+    icon: Video,
+    number: "Solution 7",
+    title: "AI Video Creation",
+    tagline: "Professional video content without the production costs.",
+    body: "We use AI-powered video tools to create polished promotional videos, social ads, and short-form content for your business—produced faster and more affordably than traditional video production.",
+    subItems: undefined as string[] | undefined,
   },
 ];
 
@@ -56,7 +70,7 @@ export default function Services() {
             Our solutions
           </Reveal>
           <Reveal index={1} as="h2" isTitle className="text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
-            Six ways we grow your business.
+            Seven ways we grow your business.
           </Reveal>
         </div>
 
@@ -83,7 +97,21 @@ export default function Services() {
                 </span>
                 <h3 className="mb-2 text-[22px] font-bold text-ink">{s.title}</h3>
                 <p className="mb-3 text-[15px] font-semibold text-ink">{s.tagline}</p>
-                <p className="mb-0 text-[15px] text-muted">{s.body}</p>
+                <p className={s.subItems ? "mb-4 text-[15px] text-muted" : "mb-0 text-[15px] text-muted"}>
+                  {s.body}
+                </p>
+                {s.subItems ? (
+                  <div className="flex flex-wrap gap-2">
+                    {s.subItems.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
               </Reveal>
             );
           })}
