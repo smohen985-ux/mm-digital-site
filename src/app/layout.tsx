@@ -4,16 +4,17 @@ import "./globals.css";
 
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
-const siteUrl = "https://smohen985-ux.github.io/mm-digital-site";
+const origin = "https://smohen985-ux.github.io";
+const siteUrl = `${origin}/mm-digital-site`;
 const description =
   "We help businesses grow through Google Ads, Meta Ads, SEO, website development, and digital strategy—all managed by a dedicated expert focused on delivering measurable results.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(origin),
   title: "M&M Digital Pro — Marketing for Small Business Owners",
   description,
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     title: "M&M Digital Pro — Marketing for Small Business Owners",
