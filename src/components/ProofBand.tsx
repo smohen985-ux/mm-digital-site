@@ -5,7 +5,7 @@ const CATEGORIES = ["Restaurants", "Salons & Spas", "Gyms & Studios", "Contracto
 const PROOF = [
   { figure: "0", label: "Months minimum contract" },
   { figure: "1", label: "Person you talk to, every time" },
-  { figure: "7", label: "Services. No upsells." },
+  { figure: "8", label: "Services. No upsells." },
 ];
 
 export default function ProofBand() {
