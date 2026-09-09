@@ -1,4 +1,4 @@
-import { Search, Megaphone, Globe2, TrendingUp, BarChart3, Briefcase, Video } from "lucide-react";
+import { Search, Megaphone, Globe2, TrendingUp, BarChart3, Briefcase, Video, UserCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { AdMockupIllustration } from "./ui/illustrations";
 
@@ -59,6 +59,14 @@ const SOLUTIONS = [
     body: "We use AI-powered video tools to create polished promotional videos, social ads, and short-form content for your business—produced faster and more affordably than traditional video production.",
     subItems: undefined as string[] | undefined,
   },
+  {
+    icon: UserCircle,
+    number: "Solution 8",
+    title: "Biography Videos & Profiles",
+    tagline: "Put a face and a story behind your business.",
+    body: "We produce short video and written biography profiles that introduce you or key people on your team to customers—building trust and a personal connection before they ever reach out.",
+    subItems: undefined as string[] | undefined,
+  },
 ];
 
 export default function Services() {
@@ -70,7 +78,7 @@ export default function Services() {
             Our solutions
           </Reveal>
           <Reveal index={1} as="h2" isTitle className="text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
-            Seven ways we grow your business.
+            Eight ways we grow your business.
           </Reveal>
         </div>
 
