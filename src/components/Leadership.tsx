@@ -2,7 +2,6 @@ import { Reveal } from "./Reveal";
 
 const TEAM = [
   { initials: "M1", name: "M1", role: "Founder" },
-  { initials: "M2", name: "M2", role: "CEO" },
 ];
 
 export default function Leadership() {
