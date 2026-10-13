@@ -15,3 +15,112 @@ body {
   background-color: #0e0e10;
   color: #f5f5f2;
 }
+
+/* ---------- Site-wide animated background ---------- */
+.animated-bg {
+  background: #0e0e10;
+}
+
+.animated-bg__orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  will-change: transform;
+}
+.animated-bg__orb--1 {
+  width: 46vmax;
+  height: 46vmax;
+  top: -12vmax;
+  left: -10vmax;
+  background: radial-gradient(circle, rgba(255, 75, 31, 0.32) 0%, rgba(255, 75, 31, 0) 70%);
+  animation: bg-drift-1 32s ease-in-out infinite alternate;
+}
+.animated-bg__orb--2 {
+  width: 40vmax;
+  height: 40vmax;
+  bottom: -14vmax;
+  right: -8vmax;
+  background: radial-gradient(circle, rgba(255, 122, 77, 0.26) 0%, rgba(255, 122, 77, 0) 70%);
+  animation: bg-drift-2 38s ease-in-out infinite alternate;
+}
+.animated-bg__orb--3 {
+  width: 30vmax;
+  height: 30vmax;
+  top: 35%;
+  left: 40%;
+  background: radial-gradient(circle, rgba(201, 61, 15, 0.22) 0%, rgba(201, 61, 15, 0) 70%);
+  animation: bg-drift-3 44s ease-in-out infinite alternate;
+}
+
+.animated-bg__grid {
+  position: absolute;
+  inset: -64px;
+  background-image:
+    linear-gradient(rgba(245, 245, 242, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 245, 242, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, #000 30%, transparent 100%);
+  animation: bg-grid-pan 24s linear infinite;
+  will-change: transform;
+}
+
+.animated-bg__sweep {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 122, 77, 0) 0%,
+    rgba(255, 122, 77, 0.05) 50%,
+    rgba(255, 122, 77, 0) 100%
+  );
+  transform: translateX(-100%) rotate(8deg);
+  animation: bg-sweep 14s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animated-bg__grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@keyframes bg-drift-1 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(18vw, 12vh, 0) scale(1.12); }
+  100% { transform: translate3d(6vw, 28vh, 0) scale(0.95); }
+}
+@keyframes bg-drift-2 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-20vw, -14vh, 0) scale(1.1); }
+  100% { transform: translate3d(-8vw, -30vh, 0) scale(1.05); }
+}
+@keyframes bg-drift-3 {
+  0%   { transform: translate3d(0, 0, 0) scale(0.9); }
+  50%  { transform: translate3d(-22vw, 10vh, 0) scale(1.15); }
+  100% { transform: translate3d(14vw, -12vh, 0) scale(1); }
+}
+@keyframes bg-grid-pan {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(64px, 64px, 0); }
+}
+@keyframes bg-sweep {
+  0%, 15% { transform: translateX(-100%) rotate(8deg); }
+  65%, 100% { transform: translateX(320%) rotate(8deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-bg__orb,
+  .animated-bg__grid,
+  .animated-bg__sweep {
+    animation: none;
+  }
+  .animated-bg__sweep {
+    display: none;
+  }
+}

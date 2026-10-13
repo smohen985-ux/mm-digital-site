@@ -25,7 +25,7 @@ export default function ProofBand() {
         </div>
       </div>
 
-      <div className="bg-bg">
+      <div>
         <div className="container grid grid-cols-1 gap-4 py-16 md:grid-cols-3">
           {PROOF.map((p, i) => (
             <Reveal key={p.label} index={i} className="rounded-2xl border border-border bg-surface p-8">

@@ -37,7 +37,7 @@ export default function HowWeWork() {
   return (
     <section
       id="who-we-serve"
-      className="bg-gradient-to-b from-surface2 to-bg py-24"
+      className="bg-gradient-to-b from-surface2/70 to-transparent py-24"
     >
       <div className="container">
         <div className="mb-16 max-w-[640px]">

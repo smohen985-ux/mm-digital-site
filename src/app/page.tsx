@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import AetherFlowHero from "@/components/ui/aether-flow-hero";
 import ProofBand from "@/components/ProofBand";
 import About from "@/components/About";
@@ -13,6 +14,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <AnimatedBackground />
       <Nav />
       <main>
         <div id="home">
