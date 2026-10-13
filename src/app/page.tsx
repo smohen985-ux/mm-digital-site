@@ -5,6 +5,7 @@ import ProofBand from "@/components/ProofBand";
 import About from "@/components/About";
 import Leadership from "@/components/Leadership";
 import Services from "@/components/Services";
+import GrowthTable from "@/components/GrowthTable";
 import HowWeWork from "@/components/HowWeWork";
 import WhoItsFor from "@/components/WhoItsFor";
 import Values from "@/components/Values";
@@ -24,6 +25,7 @@ export default function Home() {
         <About />
         <Leadership />
         <Services />
+        <GrowthTable />
         <HowWeWork />
         <WhoItsFor />
         <Values />

@@ -1,9 +1,11 @@
 import { Reveal } from "./Reveal";
+import LanyardBadge from "./ui/lanyard-badge";
 
 export default function Leadership() {
   return (
     <section id="leadership" className="py-24">
-      <div className="container flex max-w-[720px] flex-col items-start text-left">
+      <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
+      <div className="flex max-w-[620px] flex-col items-start text-left">
         <Reveal index={0} as="h2" isTitle className="mb-8 text-[28px] font-extrabold leading-[1.08] tracking-tight md:text-[40px]">
           Real expertise. Real results. The M&amp;M story.
         </Reveal>
@@ -21,6 +23,8 @@ export default function Leadership() {
           results. Everything we do is grounded in transparency, clear performance, and a real
           commitment to your long-term success.
         </Reveal>
+      </div>
+      <LanyardBadge />
       </div>
     </section>
   );
