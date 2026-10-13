@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Leadership from "@/components/Leadership";
 import Services from "@/components/Services";
 import GrowthTable from "@/components/GrowthTable";
+import ResultsCalculator from "@/components/ResultsCalculator";
 import HowWeWork from "@/components/HowWeWork";
 import WhoItsFor from "@/components/WhoItsFor";
 import Values from "@/components/Values";
@@ -26,6 +27,7 @@ export default function Home() {
         <Leadership />
         <Services />
         <GrowthTable />
+        <ResultsCalculator />
         <HowWeWork />
         <WhoItsFor />
         <Values />
